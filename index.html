@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Cirko - Escuela de Música & Artes</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- METAS -->
     <meta name="description" content="El Cirko, <strong>Escuela de Música y Artes</strong>, se encuentra ubicada en Pilar, Provincia de Buenos Aires, y se propone como un amplio Centro Cultural cuyo eje principal es la Música">
@@ -24,12 +25,14 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <!-- CONSTRUCTION CSS -->
     <link rel="stylesheet" href="./assets/css/construction.css">
-
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/712520a43b.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+
 </head>
-<body>
+<body class="body">
 
     <header>
 
@@ -37,34 +40,34 @@
 
     <main>
             <div class="construction-page">
-                <div class="construction-info d-grid align-items-center overflow-hidden">
+                <div class="construction-info d-grid align-items-center">
                     <div class="row text-center">
                         <div class="col-12 text">
-                            <h1 class="shadow">El Cirko, <strong>Escuela de Música y Artes</strong></h1>
+                            <h1 class="shadow fw-bold">El Cirko, <strong class="fw-normal">Escuela de Música y Artes</strong></h1>
                             <p>Nos encontramos renovando nuestro Sitio Web para brindarles una mejor experiencia</p>
                         </div>
                     </div>
                     <div class="row p-5 text-justify information-row">                        
-                        <div class="col-5">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                             <h3>¿Quienes somos?</h3>
-                            <p>Desde hace 20 años, El Cirko <strong>Escuela de Música y Artes</strong>, se propone como un amplio Centro Cultural
+                            <p>Desde hace 20 años, <span class="fw-bold">El Cirko</span> <strong class="fw-normal">Escuela de Música y Artes</strong>, se propone como un amplio Centro Cultural
                             cuyo eje principal es la Música. Creemos que el ejercicio musical es una práctica necesaria y consustancial a una comunidad
                             pues actúa sobre su vivencia artistica y se constituye en un lenguaje que posibilita la comunicación y la expresión entre
                             sus integrantes. En El Cirko, la implementamos como una actividad social y colectiva desde un ámbito edilicio y académico de excelencia.
                             Contamos con los recursos humanos y la metodología indispensable para hacer de cada alumno un experto en el arte de la música</p>
                         </div>
-                        <div class="col-2"></div>
-                        <div class="col-5">
-                            <h2>Nuestras clases</h2>
-                            <p>En El Cirko, <strong>Escuela de Música y Artes</strong>, contamos con las siguientes clases:</p>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+                        <div class="col-xs-12 col-sm12 col-md-12 col-lg-5 col-xl-5">
+                            <h2>Clases Presenciales y Online</h2>
+                            <p>En <span class="fw-bold">El Cirko</span>, <strong class="fw-normal">Escuela de Música y Artes</strong>, contamos con las siguientes clases:</p>
                             <ul>
-                                <li>Clases de Piano</li>
-                                <li>Clases de Canto</li>
-                                <li>Clases de de Batería</li>
-                                <li>Clases de Bajo</li>
-                                <li>Clases de Guitarra</li>
-                                <li>Clases de Ensamble</li>
-                                <li>Clases de Ukelele</li>
+                                <li>Piano</li>
+                                <li>Canto</li>
+                                <li>Batería</li>
+                                <li>Bajo</li>
+                                <li>Guitarra</li>
+                                <li>Ensamble</li>
+                                <li>Ukelele</li>
                                 <li>Iniciación Musical</li>
                                 <li>Lenguaje Musical</li>
                             </ul>
@@ -72,14 +75,36 @@
                     </div>
                     <div class="row">
                         <div class="col-12 text-center">
-                            <div class="contact-information">
-                                    <i data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover focus" title="Envíar un correo" class="fas fa-envelope"></i>
-                                    <a href="" data-bs-toggle="popover" title="Enviar un WhatsApp" data-bs-trigger="hover focus" data-bs-placement="right"><i class="fab fa-whatsapp"></i></a>
-                                    <a href=""></a>
+                            <div class="contact-information p-3">
+                                    <a href="#" id="contactIcon" data-bs-toggle="modal" data-bs-target="#contactModal"><i data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" title="Envíar un correo" class="fas fa-envelope p-2"></i></a>
+                                    <a class="p-2" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://api.whatsapp.com/send/?phone=5491167138316&text=Hola%2C+quisiera+m%C3%A1s+informaci%C3%B3n+sobre+las+clases+de+&app_absent=0">
+                                        <i class="fab fa-whatsapp" data-bs-toggle="popover" title="Enviar un WhatsApp" data-bs-trigger="hover focus" data-bs-placement="top"></i></a>
+                                    
+                                        <a class="p-2" href="https://instagram.com/elcirko?igshid=YmMyMTA2M2Y=" 
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"  data-bs-toggle="popover" 
+                                        title="Instagram" 
+                                        data-bs-trigger="hover focus" 
+                                        data-bs-placement="top"></i></a>
+                                       
+                                        <a class="p-2" href="https://www.facebook.com/ElCirkoescuelademusicayartes" 
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-facebook"  data-bs-toggle="popover" 
+                                        title="Facebook" 
+                                        data-bs-trigger="hover focus" 
+                                        data-bs-placement="top"></i></a>
+
+                                    <a class="p-2" href="https://www.google.com/maps/place/El+Cirko/@-34.4344298,-58.8244335,15z/data=!4m2!3m1!1s0x0:0x317aad0a9262593b?sa=X&ved=2ahUKEwjk_9faocL3AhWiD0QIHc1gCAwQ_BJ6BAhAEAU" 
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i data-bs-toggle="popover" data-bs-content="Panamericana Ramal Pilar km 45,5 - Calle de acceso a Los Lagartos C.C, B1669 La Lonja, Provincia de Buenos Aires, Argentina"
+                                    data-bs-trigger="hover focus" 
+                                    data-bs-placement="top" 
+                                    title="Ubicación"  class="fas fa-map-marked"></i></a>
+                                    
                                 </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <p>Nos ubicamos en: <a href="https://www.google.com/maps/place/El+Cirko/@-34.4344298,-58.8244335,15z/data=!4m2!3m1!1s0x0:0x317aad0a9262593b?sa=X&ved=2ahUKEwjk_9faocL3AhWiD0QIHc1gCAwQ_BJ6BAhAEAU" target="_blank" rel="noopener noreferrer">Panamericana Ramal Pilar km 45,5 - Calle de acceso a Los Lagartos C.C, B1669 La Lonja, Provincia de Buenos Aires, Argentina</a> </p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +115,54 @@
     <footer>
 
     </footer>
+
+   <!-- MODAL FORMULARIO DE CONTACTO -->
+   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm">
+              
+            <div class="mb-3">
+              <label for="from_name" class="col-form-label">Nombre y Apellido: <span class="fw-bold text-danger">*</span></label>
+              <input type="text" class="form-control" id="from_name" required>
+            </div>
+            <div class="mb-3">
+              <label for="from_email" class="col-form-label">Email: <span class="fw-bold text-danger">*</span></label>
+              <input type="email" class="form-control" id="from_email" required>
+            </div>
+            <div class="mb-3">
+              <label for="from_phone" class="col-form-label">Teléfono:</label>
+              <input type="number" class="form-control" id="from_phone">
+            </div>
+            <div class="mb-3">
+              <label for="from_subject" class="col-form-label">Asunto: <span class="fw-bold text-danger">*</span></label>
+              <input type="text" class="form-control" id="from_subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="from_message" class="col-form-label">Mensaje: <span class="fw-bold text-danger">*</span></label>
+              <textarea class="form-control" id="from_message" required></textarea>
+            </div>
+            <div class="mb-3" id="recaptchaContainer">
+              
+            </div>
+            
+            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
 <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script src="./assets/js/index.js"></script>
+
+
 </body>
 </html>
