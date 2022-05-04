@@ -13,6 +13,20 @@ body {
     background-attachment: fixed;
 }
 
+.svg-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.281);
+    z-index: 100000;
+}
+
 .construction-page {
     width: 100%;
     height: 100%;
