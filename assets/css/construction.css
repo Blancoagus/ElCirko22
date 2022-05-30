@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.construction-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/EscuelaNoche.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.construction-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 3, 3, 0.452);
+    color: white;
+}
+
+.information-row {
+    box-shadow: 5px 5px 25px -15px rgba(211, 211, 211, 0.486);
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+p,
+h1,
+h2,
+a {
+    text-shadow: 2px 2px 5px black;
+}
+
+a {
+    color: white;
+}
+
+i {
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 24px;
+}
