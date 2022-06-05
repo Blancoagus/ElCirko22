@@ -147,7 +147,6 @@ a img {
 
 footer {
     background-color: black;
-    height: 400px;
 }
 
 .rrss a {
@@ -156,4 +155,28 @@ footer {
 
 .rrss a i {
     font-size: 25px;
+}
+
+/* ASIDE */
+
+aside {
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    bottom: 5vh;
+    right: 0;
+    background-color: rgb(45, 153, 12);
+    width: 5%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+aside a {
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+}
+
+aside a i {
+    font-size: 26px;
+    font-weight: 800;
 }
