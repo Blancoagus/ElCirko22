@@ -16,3 +16,32 @@ d.addEventListener("scroll", (e) => {
     navbar.classList.remove("nav-sticky")
   }
 })
+
+d.addEventListener("click", (e) => {
+  if(e.target.matches(".navbar-toggler") || e.target.matches(".navbar-toggler-icon")){
+    var nav = d.querySelector("#navbarNav");
+    if(nav.classList.contains("responsive-nav")){
+      nav.classList.add("collapse");
+      nav.classList.remove("responsive-nav");
+      d.querySelector("#close-nav").classList.add("d-none");
+    } else {
+      nav.classList.remove("collapse");
+      nav.classList.add("responsive-nav");
+      d.querySelector("#close-nav").classList.remove("d-none");
+    }
+  }
+
+  if(e.target.matches("#close-nav")){
+    var nav = d.querySelector("#navbarNav");
+    if(nav.classList.contains("responsive-nav")){
+      nav.classList.add("collapse");
+      nav.classList.remove("responsive-nav");
+      d.querySelector("#close-nav").classList.add("d-none");
+    } else {
+      nav.classList.remove("collapse");
+      nav.classList.add("responsive-nav");
+      d.querySelector("#close-nav").classList.remove("d-none");
+    }
+  }
+
+})

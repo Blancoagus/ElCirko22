@@ -83,6 +83,23 @@ a img {
     transition: background-color .3s ease-in;
 }
 
+
+.responsive-nav {
+    position: fixed;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 45%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: var(--z-1000000);
+}
+
 .nav-bkg.nav-sticky {
     position: sticky;
     background-color: rgb(0, 0, 0);
@@ -93,12 +110,46 @@ a img {
     z-index: var(--z-1000000);
 }
 
+.nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
 .navbar {
     height: 15vh;
     background-color: var(--bkg-img-color);
     box-shadow: 1px 3px 15px -1px rgb(70, 70, 70);
 }
 
+.twenty-img {
+    width: 15%;
+}
+
+.nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+@media (max-width: 650px){
+    .logo-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 950px){
+    .logo-container {
+        width: 30%;
+    }
+}
+
+@media (max-width: 2050px){
+    .logo-container {
+        width: 30%;
+    }
+}
 
 .logo-img {
     width: 45%;
@@ -116,11 +167,11 @@ a img {
 
 .nav-link {
     margin: 0;
-    color: white;
+    color: white !important;
 }
 
 .nav-link:hover {
-    color: var(--link-hover);
+    color: var(--link-hover) !important;
 }
 
 /* WHO SECTION */
@@ -128,7 +179,7 @@ a img {
 .who-section {
     margin-top: 20px;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
     position: relative;
 }
@@ -136,6 +187,11 @@ a img {
 .carousel-item img {
     object-fit: cover;
     object-position: bottom;
+}
+
+.who-carousel {
+    width: 100%;
+    height: 95vh;
 }
 
 .who-description {
@@ -150,7 +206,21 @@ a img {
     bottom:0;
     left: 0;
     right: 0;
+    height: 100%;
     z-index: var(--z-100000);
+}
+
+@media (max-width:400px){
+    .who-description {
+        display: block;
+        padding: 1px;
+        font-size: 14px;
+    }
+
+    .who-description h3 {
+        margin: 0;
+        font-size: 14px;
+    }
 }
 
 /* FOOTER */
@@ -188,6 +258,37 @@ aside a {
 }
 
 aside a i {
+    color: rgb(255, 255, 255);
     font-size: 26px;
     font-weight: 800;
+}
+
+@media (max-width:600px){
+    aside {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    aside a,
+    aside i {
+        color: white;
+    }
+}
+
+@media (max-width:1040px){
+    aside {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    aside a,
+    aside i {
+        color: white;
+    }
 }
