@@ -126,21 +126,31 @@ a img {
 /* WHO SECTION */
 
 .who-section {
+    margin-top: 20px;
     width: 100%;
-}
-
-.who-img {
-    position: relative;
-    display: block;
-    height: 50vh;
-    width: 100%;
+    height: 100vh;
     overflow: hidden;
-    background-color: red;
+    position: relative;
 }
 
-.who-img img {
+.carousel-item img {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.who-description {
     position: absolute;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: var(--bkg-img-color);
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-100000);
 }
 
 /* FOOTER */
@@ -169,6 +179,7 @@ aside {
     width: 5%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    z-index: var(--z-100000);
 }
 
 aside a {
